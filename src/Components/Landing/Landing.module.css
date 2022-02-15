@@ -1,0 +1,38 @@
+.landing_main_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ECECEC;
+}
+
+.login_signup_container { 
+    padding: 1%;
+    border-radius: 1vh;
+    box-shadow: 0 0 2vh .1vh lightgrey;
+    background-color: #fff;
+}
+
+.login_signup_container ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.login_signup_container ul li {
+    list-style: none;
+    margin: 0 1vh 0 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login_signup_container ul li:hover {
+    transition: all .2s ease-in-out;
+    color: #5897e6; 
+}
+
+.login_signup_active_link {
+    color: #3E86DE;
+    border-bottom: 2px solid #3E86DE
+}
