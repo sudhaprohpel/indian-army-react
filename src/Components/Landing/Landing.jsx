@@ -4,7 +4,7 @@ import Signup from '../Signup/Signup'
 import Login from '../Login/Login'
 
 const Landing = () => {
-    const [loginTabClicked, setLoginTabClicked] = useState(false)
+    const [loginTabClicked, setLoginTabClicked] = useState(true)
     const [signTabClicked, setSignTabClicked] = useState(false)
 
     function handleLoginClick() {
@@ -34,19 +34,10 @@ const Landing = () => {
                     >
                         Signup</li>
                 </ul>
-                {
-                    loginTabClicked &&
-                    (
-                        <Login />
-                    )
-                }
 
-                {
-                    signTabClicked &&
-                    (
-                        <Signup />
-                    )
-                }
+
+                {loginTabClicked && (<Login />)}
+                {signTabClicked && (<Signup />)}
             </div>
         </div>
     )

@@ -1,3 +1,32 @@
 .login_main_container {
-    width: 30vw;
+}
+
+.login_options_container {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget_password a {
+    text-decoration: none;
+    color: #3E86DE;
+    font-weight: 600;
+}
+
+.forget_password a:hover {
+    color: #2c72c9;
+}
+
+.remember_me {
+    display: flex;
+    align-items: center;
+}
+
+.forget_password {
+    display: flex;
+    align-items: center;
+}
+
+.remember_me, .forget_password a {
+    font-size: 1vw;
 }
