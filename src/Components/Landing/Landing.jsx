@@ -8,13 +8,11 @@ const Landing = () => {
     const [signTabClicked, setSignTabClicked] = useState(false)
 
     function handleLoginClick() {
-        console.log('login clicked')
         setLoginTabClicked(true)
         setSignTabClicked(false)
     }
 
     function handleSignupClick() {
-        console.log('signup clicked')
         setLoginTabClicked(false)
         setSignTabClicked(true)
     }

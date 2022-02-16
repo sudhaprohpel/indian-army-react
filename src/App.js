@@ -1,4 +1,5 @@
 import styles from './App.module.css';
+import React, { useState } from 'react'
 import Landing from './Components/Landing/Landing'
 
 const App = () => {
@@ -7,7 +8,6 @@ const App = () => {
       <Landing/>
     </div>
   )
-
 }
 
 export default App;
