@@ -6,17 +6,22 @@ import { BsKey } from 'react-icons/bs'
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import axios from 'axios'
 
-const Login = () => {
+const Login = ({isUserRegistered, getuserName}) => {
     const [showPassword, setShowPassword] = useState(false)
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
 
     function handleLoginInputs() {
-        axios.get('http//localhost:4000/login-user', {
-            userName: userName,
-            password: password
-        })
-            .then(res => console.log(res.data))
+        // axios.get('http://localhost:4000/login-user', {
+        //     userName: userName,
+        //     password: password
+        // })
+        //     .then(res => console.log(res.data))
+
+        if(userName && password){
+            getuserName(userName)
+            isUserRegistered(true)
+        }
     }
 
     return (

@@ -1,0 +1,49 @@
+.dashboard_main_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ECECEC;
+}
+
+.dashboard_right_container {
+    display: flex;
+}
+
+.sidebar_links_container {
+    height: 90vh;
+    width: 15vw;
+    background-color: #fff;
+    padding: 1%;
+    box-shadow: 0 0 10px 1px rgb(221, 221, 221);
+}
+
+.link_container {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1vh 0;
+    color: rgb(58, 57, 57);
+}
+
+.link_icon, .link_text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link_icon {
+    margin: 0 .5vw;
+}
+
+.link_container:hover {
+    color: #3E86DE;
+}
+
+.active_link {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1vh 0;
+    color: #3E86DE
+}

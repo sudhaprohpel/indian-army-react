@@ -12,7 +12,8 @@ const Signup = () => {
     const [userPassword, setUserPassword] = useState('')
 
     function handleSignupInputs() {
-        console.log(fullName, userName, userPassword)
+        console.log('inside handle signup inputs')
+        // console.log(fullName, userName, userPassword)
         axios.post('http://localhost:4000/register-user', {
             fullName: fullName,
             userName: userName,

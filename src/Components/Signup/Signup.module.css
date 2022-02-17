@@ -18,6 +18,7 @@
 .input_container .image_container {
     margin: 0 .5vh;
     color: #3E86DE;
+    cursor: pointer;
 }
 
 .input_container input {
