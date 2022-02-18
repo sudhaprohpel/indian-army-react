@@ -43,12 +43,12 @@ app.get('/login-user', async (req, res) => {
         password: req.body.password
     }
     console.log(data.name)
-    db.run(`select * from users where userName = '${data.name}' and password = '${data.password}'`, (err) => {
+    let result = db.run(`select * from users where userName = '${data.name}' and password = '${data.password}'`, (err) => {
         if(err){
             console.log(err.message)
         }
     })
-    res.send()
+    res.send(result)
 })
 
 app.listen(PORT, () => {

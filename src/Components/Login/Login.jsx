@@ -16,13 +16,13 @@ const Login = ({isUserRegistered, getuserName}) => {
             userName: userName,
             password: password
         })
-            .then(res => console.log(res.data))
+            .then(res => console.log("hi from login2", res.data))
 
-        if(userName && password){
-            getuserName(userName)
-            isUserRegistered(true)
-        }
-        console.log(res)
+        // if(userName && password){
+        //     getuserName(userName)
+        //     isUserRegistered(true)
+        // }
+        console.log("hello from login", res)
     }
 
     return (
