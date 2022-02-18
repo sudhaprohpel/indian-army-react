@@ -9,8 +9,11 @@ const Navbar = ({ userName, logoutUser }) => {
         <div className={styles.navbar_main_container}>
             <div className={styles.name_image_container}>
                 {userName[0]}
+                S
             </div>
-            <p>{userName}</p>
+            <p>{userName}
+                Sudhanshu
+            </p>
             <div className={styles.dropdown_arrow_container} onClick={() => setIsDropdown(!isDropdown)}>
                 {isDropdown ? <FaChevronUp /> : <FaChevronDown />}
             </div>

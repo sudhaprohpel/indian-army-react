@@ -11,7 +11,7 @@
 }
 
 .navbar_main_container p {
-    margin: 0;
+    margin: 0 .2vw .3vh .2vw;
 }
 
 .navbar_main_container > * {

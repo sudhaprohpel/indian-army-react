@@ -32,7 +32,7 @@ const Landing = () => {
         setSignTabClicked(true)
     }
 
-    return !isAuthUser ? (
+    return isAuthUser ? (
         <div className={styles.landing_main_container}>
             <div className={styles.login_signup_container}>
                 <ul>

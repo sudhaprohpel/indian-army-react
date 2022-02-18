@@ -1,0 +1,44 @@
+.addperson_main_container {
+    height: 90vh;
+    width: 70vw;
+    box-shadow: 0 0 10px 1px rgb(231, 231, 231);
+    background-color: #fff;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addperson_container {
+    height: 50%;
+    width: 80%;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+}
+
+.icon_container {
+    color: #3E86DE;
+    font-size: 5vh;
+}
+
+.addperson_container button {
+    margin-top: 2vh;
+    height: 5vh;
+    width: 5vw;
+    border-radius: 1vh;
+    outline: none;
+    border: none;
+    font-size: 1vw;
+    color: #fff;
+    background-color: #3E86DE;
+    cursor: pointer;
+}
+
+.addperson_container button:hover {
+    transition: all .2s ease-in-out;
+    background-color: #0a5bbd;
+}

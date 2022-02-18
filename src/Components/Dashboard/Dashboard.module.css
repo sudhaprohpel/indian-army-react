@@ -3,7 +3,9 @@
     width: 100vw;
     background-color: #ECECEC;
 }
-
+.dashboard_content_container {
+    display: flex;
+}
 .dashboard_right_container {
     display: flex;
 }
@@ -14,6 +16,7 @@
     background-color: #fff;
     padding: 1%;
     box-shadow: 0 0 10px 1px rgb(221, 221, 221);
+    margin-right: 1vw;
 }
 
 .link_container {
