@@ -12,16 +12,17 @@ const Login = ({isUserRegistered, getuserName}) => {
     const [password, setPassword] = useState('')
 
     function handleLoginInputs() {
-        // axios.get('http://localhost:4000/login-user', {
-        //     userName: userName,
-        //     password: password
-        // })
-        //     .then(res => console.log(res.data))
+        let res = axios.get('http://localhost:4000/login-user', {
+            userName: userName,
+            password: password
+        })
+            .then(res => console.log(res.data))
 
         if(userName && password){
             getuserName(userName)
             isUserRegistered(true)
         }
+        console.log(res)
     }
 
     return (

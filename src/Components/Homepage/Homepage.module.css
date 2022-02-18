@@ -1,0 +1,42 @@
+.homepage_main_container {
+    height: 90vh;
+    width: 70vw;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px lightgrey;
+    padding: 1%;
+}
+
+.homepage_upper_container {
+    display: flex;
+}
+.homepage_upper_container > div {
+    height: 5vh;
+    margin-right: 5vw;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 1vh;
+    padding: 1%;
+}
+
+.search_form_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_name_container {
+    display: flex;
+    align-items: center;
+}
+
+.search_form_container input, .search_name_container input {
+    outline: none;
+    border: none;
+}
+
+.icon_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
